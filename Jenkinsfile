@@ -25,7 +25,8 @@ pipeline {
       //Archive the JAR file as an artifact after build:
       //The artifact can be easily downloaded and shared with others like for testing or analysis.
        archiveArtifacts 'target/*.jar'
-            
+            copyArtifacts(projectName: 'ProjectB', target: 'libs\\\\', flatten: true)
+            bat "java -jar libs\\ProjectA-1.0-SNAPSHOT.jar"
             }
         }
     }
