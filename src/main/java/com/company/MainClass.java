@@ -1,6 +1,4 @@
-package com.compnay;
-
-import org.w3c.dom.ls.LSOutput;
+package com.company;
 
 public class MainClass {
 
