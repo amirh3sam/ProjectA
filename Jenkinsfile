@@ -13,7 +13,7 @@ pipeline {
                     // Trigger the ParameterizedJob with specified parameters
                     build job: 'mySmokePipeLine', parameters: [
                         string(name: 'browser', value: browserValue2),
-                             string(name: 'browser', value: browserValue1),
+                             string(name: 'browser', value: browserValue),
                         string(name: '@testType', value: environmentValue)
                     ]
                 }
