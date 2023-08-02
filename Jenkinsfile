@@ -11,7 +11,7 @@ pipeline {
                     def environmentValue = '@smoke'
                     
                     // Trigger the ParameterizedJob with specified parameters
-                    build job: 'ParameterizedJob', parameters: [
+                    build job: 'mySmokePipeLine', parameters: [
                         string(name: 'browser', value: browserValue),
                              string(name: 'browser', value: browserValue2),
                         string(name: '@testType', value: environmentValue)
